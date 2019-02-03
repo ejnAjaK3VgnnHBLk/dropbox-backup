@@ -52,14 +52,12 @@ function gensync {
 }
 
 # Check if sync.sh is full
-if [ -s $install_dir ]; then
-  # File is empty, go ahead and generate sync.sh in #install_dir
+if [ -f "$install_dir" ]; then
+  #file if found, backup and delete, then add script back
+  mv $install_dir $install_dir.bak
+  rm -f $install_dir
   gensync
 else
-  # Back up current sync.sh
-  mv $install_dir $install_dir.bak
-  # overwrite contents
-  echo '' > $install_dir
   gensync
 fi
 
