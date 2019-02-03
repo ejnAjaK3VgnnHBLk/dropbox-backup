@@ -40,7 +40,7 @@ function gensync {
   echo 'sync()' >> $install_dir
   echo 'elif [ ! -d $path/$bac/$dat]; then' >> $install_dir
   echo 'mkdir $path/$bac/$dat' >> $install_dir
-  echo 'cp -r $path/$dropbx' >> $install_dir
+  echo 'cp -r $path/$dropbx $path/$bac/$dat' >> $install_dir
   echo 'tar -czvf $path/$bac/$dat.tar.gz $path/$bac/$dat/'>> $install_dir
   echo 'rm -rf $path/$bac/$dat' >> $install_dir
   echo 'else' >> $install_dir
