@@ -3,10 +3,10 @@
 #######################################################
 # CHANGE THE FOLLOWING VARIABLES TO SUIT YOUR NEED    #
 #######################################################
-user=alona                                # insert your username here
-install_location=/home/alona              # insert where you want the sync.sh to be installed to
-backup_location=/home/alona/dropbox_backup # insert the FULL PATH where you want your dropbox backup to be located
-dropbox_folder=/home/alona/Dropbox        # insert the FULL PATH of where your already existing Dropbox folder is
+user=alan                                 # insert your username here
+install_location=/home/alan              # insert where you want the sync.sh to be installed to
+backup_location=/home/alan/dropbox_backup # insert the FULL PATH where you want your dropbox backup to be located
+dropbox_folder=/home/alan/Dropbox        # insert the FULL PATH of where your already existing Dropbox folder is
 cron_hour=10                              # insert what hour you want the script to run at (24-hour time)
 cron_minute=10                            # insert what minute you want the script to run at
                                           # cron_hour and cron_minute will form the time
